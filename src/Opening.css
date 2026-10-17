@@ -560,10 +560,11 @@
         transform: translate(-50%, -50%);
     }
 
-    /* --- Cake Text Title (Happy 18th Birthday!) --- */
+    /* --- Cake Text Title (Happy Birthday! 🎂🎉) --- */
     .cakeText .cakeText-title {
-        font-size: 36px;
+        font-size: clamp(22px, 7vw, 32px);
         color: #ffffff;
+        white-space: nowrap;
         text-shadow: 
             2px 2px 0px #880e4f,
             -2px 2px 0px #880e4f,
@@ -572,8 +573,9 @@
     }
 
     .cakeText .cakeText-name {
-        font-size: 2.5em;
-        margin-top: 10px;
+        font-size: clamp(1.8em, 6.5vw, 2.3em);
+        margin-top: 8px;
+        white-space: nowrap;
         opacity: 0;
         transform: translateY(-20px);
         animation: nameDrop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 7.4s forwards;

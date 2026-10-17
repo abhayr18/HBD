@@ -763,25 +763,63 @@ body {
 
 
 
-@media screen and (max-width: 658px) {
+@media screen and (max-width: 768px) {
+
+    body {
+        min-height: 100dvh;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    #wrapper {
+        min-height: 100dvh;
+        height: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 120px;
+        -webkit-overflow-scrolling: touch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flag__birthday {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+    }
 
     .flag__birthday .flag__left {
         transform: rotate(-10deg) translate(-119px, 3px);
+        max-width: 240px;
     }
 
     .flag__birthday .flag__right {
         transform: rotate(10deg) translate(-106px, 39px) scaleX(-1);
+        max-width: 240px;
     }
 
     .content {
         width: 100%;
+        max-width: 100vw;
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 25px;
+        justify-content: flex-start;
+        gap: 20px;
         align-items: center;
-        padding-top: 2rem;
+        padding: 1rem 14px 2rem;
+        box-sizing: border-box;
+    }
+
+    .content .left,
+    .content .right {
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .title {
@@ -789,184 +827,165 @@ body {
         width: 100%;
         display: flex;
         justify-content: center;
-        font-family: "Titan One", sans-serif;
-        font-size: 3rem;
-        letter-spacing: 8px;
-        flex-direction: column;
-        perspective: 1000px;
-    }
-
-    .cricle {
-        position: absolute;
-        top: 10px;
-        right: -54px;
-        display: flex;
-        justify-content: center;
         align-items: center;
-        transform: scale(0);
-        animation: scaleCricle 3s 15s forwards ease-in-out;
+        font-family: "Titan One", sans-serif;
+        font-size: clamp(2.3rem, 11vw, 3.6rem);
+        letter-spacing: 3px;
+        flex-direction: column;
+        line-height: 1.15;
     }
 
     .title .hat {
         position: absolute;
-        right: -98px;
-        top: -51px !important;
-        transform: rotate(-40deg);
-        z-index: -1;
+        right: 15px;
+        top: -36px !important;
+        transform: rotate(-25deg) scale(0.75);
+        z-index: 2;
         animation: topHat 4s 7s forwards ease;
     }
 
-    .box__letter .letter__border {
-        position: absolute;
-        width: 90vw;
-        height: 315px;
-        background-color: var(--color-white);
-        border-radius: 27px;
-        padding: 17px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
+    .date__of__birth {
+        width: min(290px, 92vw) !important;
+        height: 48px !important;
+        font-size: 0.95rem;
+        box-shadow: 0 4px 15px rgba(233, 30, 140, 0.25);
     }
 
-    .letter__border .letter {
+    .btn {
         width: 100%;
-        height: 100%;
-        background-color: var(--color-bg-letter);
-        border-radius: 10px;
-        padding-top: 15px;
-    }
-
-    .letter__border .letter .title__letter {
-        text-align: center;
-        font-family: 'Dancing Script', cursive;
-        font-weight: bold;
-        font-size: 1.4rem;
-    }
-
-    .letter__border .letter .content__letter {
-        position: relative;
-        width: 100%;
-        height: 100%;
         display: flex;
-        padding-top: .7rem;
-        padding-bottom: 70px;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 14px;
+        transform: scale(0);
+        animation: scaleCricle 1.5s 15s forwards ease-in-out;
     }
 
-    .content__letter .right .text__letter {
-        margin-top: -14px;
-        padding: 20px 15px 10px 15px;
-        font-family: 'Dancing Script', cursive;
-        font-size: .8rem;
+    #btn__letter,
+    #FromRexon,
+    #btn__gallery,
+    #btn__question {
+        width: min(290px, 92vw);
+        min-height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.95rem;
+        margin-top: 0;
+        border-radius: 50px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
     }
 
-    .content__letter .right .love__img {
-        opacity: 0;
-        position: absolute;
-        right: 126px;
-        top: 167px;
+    #btn__letter:active,
+    #FromRexon:active,
+    #btn__gallery:active,
+    #btn__question:active {
+        transform: scale(0.94);
     }
 
-    .love__img img {
+    .content .right {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
 
-        width: 84px;
-
+    .content .right .box__account {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .content .right .image {
         position: relative;
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         overflow: hidden;
         display: flex;
         align-items: center;
-        border: 6px solid var(--color-black);
+        justify-content: center;
+        border: 5px solid var(--color-black);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .content .right .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .name {
         position: absolute;
-        padding: 0px 3px;
-        bottom: -6px;
-        border: 3px solid var(--color-black);
+        padding: 4px 16px;
+        bottom: -10px;
+        border: 2.5px solid var(--color-black);
+        border-radius: 30px;
+        background-color: var(--color-text-pink);
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 5;
     }
 
     .name span {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        font-weight: 600;
     }
 
     .right .balloon_one {
         position: absolute;
-        top: 10px;
-        left: -77px;
+        top: 0;
+        left: -35px;
         animation: balloon1 2s infinite linear;
     }
 
     .right .balloon_one img {
-        width: 76px !important;
-    }
-
-    .decorate_flower--one {
-        top: 100px;
-        left: 50px;
-    }
-
-    .decorate_flower--two {
-        top: 585px;
-        left: 20px;
-    }
-
-    .decorate_flower--three {
-        top: 320px;
-        right: 25px;
-    }
-
-    .decorate_star.star1 {
-        top: 45px;
-        left: 200px;
-    }
-
-    .decorate_star.star2 {
-        top: 10px;
-        right: 20px;
-    }
-
-    .decorate_star.star3 {
-        top: 300px;
-        left: 30px;
-    }
-
-    .decorate_star.star4 {
-        bottom: 60px;
-        left: 35px;
-    }
-
-    .decorate_star.star5 {
-        bottom: 140px;
-        left: 500px;
-    }
-
-    .smiley__icon {
-        bottom: 330px;
-        left: 10px;
-        width: 50px;
+        width: 65px !important;
     }
 
     .right .balloon_two {
         position: absolute;
-        top: 60px;
-        right: -65px;
+        top: 30px;
+        right: -35px;
+        animation: balloon2 2.5s infinite linear;
     }
 
-    #btn__letter {
-        margin-top: 15px;
-        width: 200px;
+    .right .balloon_two img {
+        width: 65px !important;
     }
 
-    #FromRexon {
-        margin-top: 10px;
-        width: 200px;
+    .cricle {
+        position: absolute;
+        top: -15px;
+        right: -10px;
+        transform: scale(0.75);
+        animation: scaleCricle 3s 15s forwards ease-in-out;
+    }
+
+    .smallLetter {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        margin: 25px auto 40px !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+    }
+
+    .decorate_flower--one,
+    .decorate_flower--two,
+    .decorate_flower--three {
+        transform: scale(0.7);
+        pointer-events: none;
+    }
+
+    .smiley__icon {
+        display: none;
     }
 }
 

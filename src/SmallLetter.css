@@ -417,9 +417,21 @@
         }
     }
 
+    .small-rajib-letter {
+        margin: 20px auto 0;
+        max-width: min(92vw, 320px);
+    }
+
     .small-rajib-paper-content {
-        font-size: 14px;
-        width: 290px;
+        font-size: 13px;
+        width: 100%;
+        max-width: 290px;
+        padding: 20px 15px;
+    }
+
+    .small-rajib-paper-content p {
+        font-size: 12px;
+        line-height: 1.45;
     }
 
     .small-rajib-envelope-paper {

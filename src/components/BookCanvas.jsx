@@ -3,8 +3,15 @@ import orihime from '../assets/orihime.jpg'
 import { GiCrossMark } from 'react-icons/gi'
 
 const BookCanvas = ({ active, setActive }) => {
-
+    const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null)
+
+    useEffect(() => {
+        if (active) {
+            setIsOpen(false);
+        }
+    }, [active]);
+
     const handleClickOutside = (event) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
             setActive(true)
@@ -21,27 +28,32 @@ const BookCanvas = ({ active, setActive }) => {
     return (
         <div className={`boxMail ${active ? 'hidden opacity-0 pointer-events-none' : 'opacity-100 visible'}`}>
 
-            <div onClick={() => setActive(!active)} className="crossAll">
+            <div onClick={() => setActive(!active)} className="crossAll" title="Close Letter">
                 <GiCrossMark className="text-white" />
             </div>
 
-            <div ref={dropdownRef} className={`boxMail-container duration-500 -translate-y-1/2 ${active ? 'top-0' : ' top-1/2'}`}>
+            <div 
+                ref={dropdownRef} 
+                onClick={() => setIsOpen(!isOpen)}
+                className={`boxMail-container duration-500 -translate-y-1/2 ${active ? 'top-0' : ' top-1/2'} ${isOpen ? 'book-flipped' : ''}`}
+                title="Tap to open or close letter"
+            >
                 <div className="card1">
                     <div className="cover-text-wrapper">
                         <h4 className="username">
-                            Dear Trishaa<span className="underline"></span>
+                            Dear Doctor Saheba<span className="underline"></span>
                         </h4>
                         <h3 className="cover-title">
-                            Happy Birthday!
+                            Happy Birthday! 🎂❤️
                         </h3>
                         <p className="cover-subtitle">
-                            A purr-fect message just for you... 💌
+                            Celebrating Your Birthday & 7 Years of Us... 💌
                         </p>
                     </div>
 
-                    {/* User Image remains the same */}
+                    {/* User Image */}
                     <div className="userImg">
-                        <img src={orihime} alt="Recipient's Photo" />
+                        <img src="/photos/moment-2.jpeg" alt="Doctor Saheba & Om" />
                     </div>
 
                     {/* New Hello Kitty themed decoration */}
@@ -58,21 +70,24 @@ const BookCanvas = ({ active, setActive }) => {
                         <circle cx="50" cy="50" r="45" stroke="rgba(255, 255, 255, 0.7)" strokeWidth="5" fill="none" /> {/* Slightly more opaque */}
                         <circle cx="50" cy="50" r="20" fill="rgba(255, 255, 255, 0.3)" />
                     </svg>
+
+                    <div className="book-tap-hint">
+                        <span>✨ Tap to Open Letter 💌</span>
+                    </div>
                 </div>
 
                 <div className="card2">
                     <div className="card2-content">
                         <h3 className="card2-recipient">
-                            To You!
+                            To My Dearest Doctor Saheba,
                         </h3>
 
                         {/* Swapping back to H2 to match the original CSS targeting */}
                         <div className="card2-message-text italic">
-                            <article style={{ marginBottom: '8px' }}>Happy Birthday, Trishaa ❤️</article>
-                            <article style={{ marginBottom: '10px' }}>From the moment we met, something in my life shifted—like the universe quietly guiding me toward someone meant for me.You brought warmth into the parts of me I didn’t even know were cold, And you expanded my days with a dimension I can only call my own.</article>
-                            <article style={{ marginBottom: '10px' }}>On your birthday, I just want you to know this: I want you with me in every chapter, every storm, every sunshine, every tomorrow. No matter what comes, I’ll be on your side—always. I’ll choose you, protect you, stand with you, and love you in ways that remind you you’re never alone.</article>
-                            <article style={{ marginBottom: '10px' }}>You’re not just another year older today… <br />
-                                you’re the reason my life feels softer, brighter, and endlessly worth living. Happy Birthday.</article>
+                            <article style={{ marginBottom: '8px' }}>Happy Birthday Doctor Saheba! 🎂🎉 On this special 18th of October, celebrating the beautiful day you were born (18.10.2007) and these unforgettable seven years of our friendship. 🥹❤️</article>
+                            <article style={{ marginBottom: '10px' }}>You came into my life as a friend, but somewhere along the way, you became so much more than that. You became my comfort person, my safe place, my biggest supporter, my partner in countless stupid conversations 😂, and someone who feels like a part of me. 🫶🏻</article>
+                            <article style={{ marginBottom: '10px' }}>I don't know what I did to deserve someone like you, but I know how lucky I am to have you. You are not just my best friend 🥰 — you are one of the most important persons in my life 🤗.</article>
+                            <article style={{ marginBottom: '10px' }}>You are my personal Doctor madam ❤️. I wish our friendship will stay ♾️. Happiest Birthday dear Sweetheart, may all your wishes come true! 🎂❣️🫶🏼</article>
                         </div>
 
                         <div className="card2-decoration"></div> {/* Decoration */}
@@ -91,8 +106,12 @@ const BookCanvas = ({ active, setActive }) => {
                         <div className="confetti-dots"></div>
 
                         <p className="signature">
-                            Your Best Friend, Mico
+                            Yours forever, Om 🫂❤️
                         </p>
+
+                        <div className="book-tap-hint inside">
+                            <span>👆 Tap to Flip Back ↩️</span>
+                        </div>
                     </div>
                 </div>
             </div>

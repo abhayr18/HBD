@@ -1,7 +1,18 @@
 /* ----------------------- Tailwind Css ------------------------ */
 @import "tailwindcss";
- @theme{
-    --font-dancingScript: "Dancing Script", "cursive";
-    --font-coiny: "Coiny", "system-ui";
-    --font-sriracha:  "Sriracha", "cursive";
- }
+@import "./Candles.css";
+@import "./Romance.css";
+@import "./UnclickableNo.css";
+
+@font-face {
+  font-family: digit;
+  src: url('/digital.ttf') format("truetype");
+}
+
+@theme {
+  --font-dancingScript: "Dancing Script", "cursive";
+  --font-coiny: "Coiny", "system-ui";
+  --font-sriracha: "Sriracha", "cursive";
+  --font-poppins: "Poppins", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+}

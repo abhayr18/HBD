@@ -7,6 +7,7 @@ import Layout from './layout/Layout'
 import Home from './pages/Home'
 import LoveLetter from './pages/LoveLetter'
 import Test from './pages/Test'
+import Question from './pages/Question'
 import OpeningAnimation from './components/OpeningAnimation'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />}></Route>
         <Route path='love-Letter' element={<LoveLetter />}></Route>
+        <Route path='question' element={<Question />}></Route>
         <Route path='test' element={<Test />}></Route>
       </Route>
     </Route>
