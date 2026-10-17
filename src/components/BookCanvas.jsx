@@ -84,10 +84,22 @@ const BookCanvas = ({ active, setActive }) => {
 
                         {/* Swapping back to H2 to match the original CSS targeting */}
                         <div className="card2-message-text italic">
-                            <article style={{ marginBottom: '8px' }}>Happy Birthday Doctor Saheba! 🎂🎉 On this special 18th of October, celebrating the beautiful day you were born (18.10.2006) and these unforgettable seven years of our friendship. 🥹❤️</article>
-                            <article style={{ marginBottom: '10px' }}>You came into my life as a friend, but somewhere along the way, you became so much more than that. You became my comfort person, my safe place, my biggest supporter, my partner in countless stupid conversations 😂, and someone who feels like a part of me. 🫶🏻</article>
-                            <article style={{ marginBottom: '10px' }}>I don't know what I did to deserve someone like you, but I know how lucky I am to have you. You are not just my best friend 🥰 — you are one of the most important persons in my life 🤗.</article>
-                            <article style={{ marginBottom: '10px' }}>You are my personal Doctor madam ❤️. I wish our friendship will stay ♾️. Happiest Birthday dear Sweetheart, may all your wishes come true! 🎂❣️🫶🏼</article>
+                            <article style={{ marginBottom: '10px' }}>
+                                ❤️🩹🎂 Happiest Birthday to dear Doctor Saheba ❤️<br />
+                                My special person, my favourite soul, and someone who means so much more to me than just a best friend. 🫂❤️♾️
+                            </article>
+                            <article style={{ marginBottom: '10px' }}>
+                                I honestly don't know how to put into words what you mean to me. You're not just my best friend; you're someone I never want to lose, someone whose happiness matters to me more than you could ever imagine, and someone I'm endlessly grateful to have in my life. 🥹💗 You are genuinely the purest girl in the world, and your beautiful heart makes you even more special to me. 🧿❤️
+                            </article>
+                            <article style={{ marginBottom: '10px' }}>
+                                No one could ever replace you, and honestly, I can't imagine my life without you in it. You're such a precious part of my world, and having you in my life is one of the things I'll always be thankful for. 🫶🏻🥺
+                            </article>
+                            <article style={{ marginBottom: '10px' }}>
+                                On your special day, I wish you all the happiness, love, and success your heart deserves. May you always keep that beautiful smile on your face, and may life give you countless reasons to be happy. No matter how much life changes, I hope our bond always stays the same. ❤️🩹🫂
+                            </article>
+                            <article style={{ marginBottom: '10px' }}>
+                                Once again Happiest birthday to dear Sweetheart 🫶🏼
+                            </article>
                         </div>
 
                         <div className="card2-decoration"></div> {/* Decoration */}

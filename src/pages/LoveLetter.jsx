@@ -6,42 +6,42 @@ const LoveLetter = () => {
         {
             id: 1,
             name: "Om",
-            msg: "Happy Birthday Doctor Saheba! 🎂🎉 Honestly, I don’t even know how to put these seven years into words. 🥹❤️",
+            msg: "❤️🩹🎂 Happiest Birthday to dear Doctor Saheba ❤️ My special person, my favourite soul, and someone who means so much more to me than just a best friend. 🫂❤️♾️",
         },
         {
             id: 2,
             name: "Om",
-            msg: "Where our friendship began — from that very first photo to a bond that will stay ♾️.",
+            msg: "I honestly don't know how to put into words what you mean to me. You're not just my best friend; you're someone I never want to lose. 🥹💗",
         },
         {
             id: 3,
             name: "Om",
-            msg: "Partner in countless stupid conversations 😂, late-night talks, and laughter that never ends.",
+            msg: "Your happiness matters to me more than you could ever imagine, and someone I'm endlessly grateful to have in my life. 🌸✨",
         },
         {
             id: 4,
             name: "Om",
-            msg: "You came into my life as a friend, but somewhere along the way, you became my comfort person and safe place 🫶🏻.",
+            msg: "You are genuinely the purest girl in the world, and your beautiful heart makes you even more special to me. 🧿❤️",
         },
         {
             id: 5,
             name: "Om",
-            msg: "I don't know what I did to deserve someone like you, but I know how lucky I am to have you in my life 🤗.",
+            msg: "No one could ever replace you, and honestly, I can't imagine my life without you in it. You're such a precious part of my world. 🫶🏻🥺",
         },
         {
             id: 6,
             name: "Om",
-            msg: "You are not just my best friend 🥰 — you are one of the most important persons in my life.",
+            msg: "Having you in my life is one of the things I'll always be thankful for. You are my safe place, comfort person, and personal Doctor madam ❤️.",
         },
         {
             id: 7,
             name: "Om",
-            msg: "You are my personal Doctor madam ❤️. Through every storm and celebration, I will always be right beside you.",
+            msg: "On your special day, I wish you all the happiness, love, and success your heart deserves. May you always keep that beautiful smile on your face! 🎂🎉",
         },
         {
             id: 8,
             name: "Om",
-            msg: "Happy Birthday to my favorite person! Seven years of unforgettable memories… and a whole lifetime of friendship ahead. Yours forever, Om 🫂❤️",
+            msg: "No matter how much life changes, I hope our bond always stays the same. Happiest birthday to dear Sweetheart 🫶🏼 — Yours forever, Om 🫂❤️",
         },
     ];
     const [openEnvelope, setOpenEnvelope] = useState(false);

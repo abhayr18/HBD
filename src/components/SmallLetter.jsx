@@ -78,7 +78,15 @@ const SmallLetter = () => {
         >
             x
         </div>
-        <p>Happy Birthday Doctor Saheba! 🎂🎉<br /><br />Seven years of pure friendship, endless laughter, and unconditional care! Wishing you all the joy, peace, and brightest smiles in the world on your birthday today. You are my safe place, my comfort person, and my personal Doctor madam.<br /><br />Yours forever, Om 💕🫂</p>
+        <p>
+            ❤️🩹🎂 Happiest Birthday to dear Doctor Saheba ❤️<br /><br />
+            My special person, my favourite soul, and someone who means so much more to me than just a best friend. 🫂❤️♾️<br /><br />
+            I honestly don't know how to put into words what you mean to me. You're not just my best friend; you're someone I never want to lose, someone whose happiness matters to me more than you could ever imagine, and someone I'm endlessly grateful to have in my life. 🥹💗 You are genuinely the purest girl in the world, and your beautiful heart makes you even more special to me. 🧿❤️<br /><br />
+            No one could ever replace you, and honestly, I can't imagine my life without you in it. You're such a precious part of my world, and having you in my life is one of the things I'll always be thankful for. 🫶🏻🥺<br /><br />
+            On your special day, I wish you all the happiness, love, and success your heart deserves. May you always keep that beautiful smile on your face, and may life give you countless reasons to be happy. No matter how much life changes, I hope our bond always stays the same. ❤️🩹🫂<br /><br />
+            Once again Happiest birthday to dear Sweetheart 🫶🏼<br /><br />
+            Yours forever, Om 🫂❤️
+        </p>
     </div>
 
     {/* --- NEW SVG DIARY PAGE DECORATION --- */}

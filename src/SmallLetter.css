@@ -119,6 +119,17 @@
     font-weight: 700;
     padding: 25px;
     opacity: 0;
+    max-height: 270px;
+    overflow-y: auto;
+}
+
+.small-rajib-paper-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.small-rajib-paper-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
 }
 
 .small-rajib-paper {
@@ -427,6 +438,8 @@
         width: 100%;
         max-width: 290px;
         padding: 20px 15px;
+        max-height: 250px;
+        overflow-y: auto;
     }
 
     .small-rajib-paper-content p {

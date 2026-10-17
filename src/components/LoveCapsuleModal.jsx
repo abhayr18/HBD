@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 
 const reasonsList = [
-  "Happy Birthday to the most amazing Doctor Saheba! 🎂🎉 May all your dreams come true.",
-  "You came into my life as a friend, but somewhere along the way, you became so much more than that. 🫶🏻",
-  "You became my comfort person, my safe place, and my biggest supporter in everything.",
-  "Because you are my personal Doctor madam ❤️🩺 and always take the best care of me.",
+  "❤️🩹🎂 Happiest Birthday to dear Doctor Saheba ❤️ My special person, my favourite soul, and someone who means so much more to me than just a best friend. 🫂❤️♾️",
+  "You're not just my best friend; you're someone I never want to lose, whose happiness matters to me more than you could ever imagine. 🥹💗",
+  "You are genuinely the purest girl in the world, and your beautiful heart makes you even more special to me. 🧿❤️",
+  "No one could ever replace you, and honestly, I can't imagine my life without you in it. 🫶🏻🥺",
+  "Having you in my life is one of the things I'll always be endlessly thankful for.",
+  "You became my comfort person, my safe place, and someone who feels like a part of me.",
+  "Because you are my personal Doctor madam ❤️🩺 and always bring peace to my life.",
   "Our countless stupid conversations that no one else in the world would ever understand 😂",
   "Seven whole years… honestly, I don't even know how to put these seven years into words 🥹❤️",
   "I don't know what I did to deserve someone like you, but I know how lucky I am to have you. 🫶🏻",
   "You are not just my best friend 🥰 — you are one of the most important persons in my life 🤗.",
-  "Happiest Birthday dear Doctor Saheba 💞 I wish our friendship will stay ♾️.",
-  "The quiet comfort and warmth in every conversation we have had since 2019.",
-  "Because no matter how crazy life gets, your advice and presence are my calm.",
+  "May you always keep that beautiful smile on your face, and may life give you countless reasons to be happy. 🌸✨",
+  "No matter how much life changes, I hope our bond always stays the same. ❤️🩹🫂",
   "How genuine, kind-hearted, and wonderfully caring you have always been.",
   "Because loving our friendship is the easiest and most natural thing in the world.",
-  "Thank you for being someone who truly feels like a part of me.",
-  "Wishing you endless smiles, success, and good health on your special day! 🌸✨",
-  "Happiest Birthday dear Sweetheart 🎂❣️🫶🏼 — Yours forever, Om 🫂❤️"
+  "Once again Happiest birthday to dear Sweetheart 🎂❣️🫶🏼 — Yours forever, Om 🫂❤️"
 ];
 
 const LoveCapsuleModal = () => {
