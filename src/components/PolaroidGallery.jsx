@@ -50,7 +50,7 @@ const PolaroidGallery = ({ isOpen, onClose }) => {
 
         <div className="text-center mb-6">
           <span className="text-xs uppercase tracking-widest text-pink-500 font-semibold bg-pink-100/80 px-3 py-1 rounded-full border border-pink-200">
-            BIRTHDAY CELEBRATION • BORN 18 OCTOBER 2007 • 7 YEARS OF US
+            BIRTHDAY CELEBRATION • BORN 18 OCTOBER 2006 • 7 YEARS OF US
           </span>
           <h2 className="text-2xl md:text-3xl font-bold font-dancingScript text-rose-600 mt-2">
             Happy Birthday Doctor Saheba! Moments We Treasure 🎂🫂❤️

@@ -84,7 +84,7 @@ const BookCanvas = ({ active, setActive }) => {
 
                         {/* Swapping back to H2 to match the original CSS targeting */}
                         <div className="card2-message-text italic">
-                            <article style={{ marginBottom: '8px' }}>Happy Birthday Doctor Saheba! 🎂🎉 On this special 18th of October, celebrating the beautiful day you were born (18.10.2007) and these unforgettable seven years of our friendship. 🥹❤️</article>
+                            <article style={{ marginBottom: '8px' }}>Happy Birthday Doctor Saheba! 🎂🎉 On this special 18th of October, celebrating the beautiful day you were born (18.10.2006) and these unforgettable seven years of our friendship. 🥹❤️</article>
                             <article style={{ marginBottom: '10px' }}>You came into my life as a friend, but somewhere along the way, you became so much more than that. You became my comfort person, my safe place, my biggest supporter, my partner in countless stupid conversations 😂, and someone who feels like a part of me. 🫶🏻</article>
                             <article style={{ marginBottom: '10px' }}>I don't know what I did to deserve someone like you, but I know how lucky I am to have you. You are not just my best friend 🥰 — you are one of the most important persons in my life 🤗.</article>
                             <article style={{ marginBottom: '10px' }}>You are my personal Doctor madam ❤️. I wish our friendship will stay ♾️. Happiest Birthday dear Sweetheart, may all your wishes come true! 🎂❣️🫶🏼</article>

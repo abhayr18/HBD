@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 const MODES = [
   {
     id: 'birth',
-    label: '🎂 Born 18 Oct 2007',
+    label: '🎂 Born 18 Oct 2006',
     tag: "✨ Time You've Blessed This Earth ✨",
-    date: '2007-10-18T00:00:00'
+    date: '2006-10-18T00:00:00'
   },
   {
     id: 'friendship',
@@ -16,7 +16,7 @@ const MODES = [
 ];
 
 const ElapsedTimer = ({ 
-  birthDate = "2007-10-18T00:00:00", 
+  birthDate = "2006-10-18T00:00:00", 
   friendshipDate = "2019-05-13T18:13:00",
   defaultMode = "birth"
 }) => {
@@ -66,7 +66,7 @@ const ElapsedTimer = ({
               : 'text-pink-200/70 hover:text-white'
           }`}
         >
-          🎂 Born 18 Oct 2007
+          🎂 Born 18 Oct 2006
         </button>
         <button
           type="button"

@@ -21,7 +21,7 @@ const Home = () => {
     const [showGallery, setShowGallery] = useState(false)
 
     useEffect(() => {
-        let datetxt = "18 October 2007";
+        let datetxt = "18 October 2006";
         let charArrDate = datetxt.split('');
         let currentIndex = 0;
         let date__of__birth = document.querySelector(".date__of__birth span");
@@ -90,7 +90,7 @@ const Home = () => {
                             <span></span>
                         </div>
 
-                        <ElapsedTimer birthDate="2007-10-18T00:00:00" friendshipDate="2019-05-13T18:13:00" defaultMode="birth" />
+                        <ElapsedTimer birthDate="2006-10-18T00:00:00" friendshipDate="2019-05-13T18:13:00" defaultMode="birth" />
 
                         <div className="btn flex md:gap-2 md:flex-row flex-col flex-wrap">
                             <button onClick={() => SetActive(!Active)} id="btn__letter">
