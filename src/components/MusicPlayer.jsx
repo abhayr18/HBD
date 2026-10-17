@@ -63,9 +63,9 @@ const MusicPlayer = () => {
         </div>
         <div className="player-details">
           <span className="player-song-title">
-            <span>7 Years of Us 🫂❤️</span>
+            <span>Haareya • Meri Pyaari Bindu 🎵</span>
           </span>
-          <span className="player-subtitle">Doctor Saheba & Om • Forever ♾️</span>
+          <span className="player-subtitle">Arijit Singh • For Doctor Saheba ❤️</span>
         </div>
         <div className={`equalizer-bars ${isPlaying ? 'playing' : ''}`}>
           <div className="eq-bar"></div>
